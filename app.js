@@ -439,15 +439,137 @@
 
 //задание пятое 
 
-const n = parseInt(prompt("Введите количество чисел в последовательности Фибоначчи:"));
+// const n = parseInt(prompt("Введите количество чисел в последовательности Фибоначчи:"));
 
-if (isNaN(n) || n <= 0) {
-    console.log("Введите положительное число.");
-} else {
-    let a = 0, b = 1;
-    for (let i = 0; i < n; i++) {
-        console.log(a);
-        [a, b] = [b, a + b];
+// if (isNaN(n) || n <= 0) {
+//     console.log("Введите положительное число.");
+// } else {
+//     let a = 0, b = 1;
+//     for (let i = 0; i < n; i++) {
+//         console.log(a);
+//         [a, b] = [b, a + b];
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+//class work
+
+// let a = 15
+// let b = 85
+
+// function plus (){
+//     console.log(a + b)
+// }
+
+
+// function minus(i , j) {
+//     console.log(i - j);
+    
+// }
+
+// minus(34786 , 390)
+
+
+// function multy(i , j) {
+//     console.log(i * j);
+    
+// }
+
+// multy(439 , 238)
+
+
+// function division(i , j) {
+//     console.log(i / j);
+// }
+
+// division(433 , 2)
+
+
+// function division(i , j) {
+//     console.log(i / j);
+// }
+
+// division("433" , true)
+
+
+
+
+
+
+
+// function sayHi(name) {
+//     console.log("hello " +  name);
+    
+// }
+
+// sayHi("John")
+
+
+
+
+// function ask(i) {
+//     if (i % 2 == 0 ) {
+//         console.log("это четное число");
+//     }  else{
+//         console.log("это нечетное число");
+        
+//     }
+// }
+
+// ask(3)
+
+
+
+// ДЗ_19
+
+// // Задание 1: Факториал числа
+// function factorial(n) {
+//     if (n < 0) {
+//         return "Факториал не определён для отрицательных чисел";
+//     }
+//     let result = 1;
+//     for (let i = 1; i <= n; i++) {
+//         result *= i;
+//     }
+//     return result;
+// }
+
+// console.log(factorial(5));
+
+
+
+// // Задание 2: Таблица умножения
+// function printMultiplicationTable(n) {
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(`${n} x ${i} = ${n * i}`);
+//     }
+// }
+
+// printMultiplicationTable(5);
+
+
+
+// Задание 3: Определение возраста и статуса
+function determineStatus(age) {
+    if (age < 0 || age > 120) {
+        return "Неверный возраст";
+    } else if (age < 18) {
+        return "Вы слишком молоды";
+    } else if (age <= 65) {
+        return "Вы взрослый человек";
+    } else {
+        return "Вы пожилой человек";
     }
 }
 
+console.log(determineStatus(15));
